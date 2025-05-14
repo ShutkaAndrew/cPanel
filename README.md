@@ -7,8 +7,8 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 ---
 
 ###  **1. Framework Stack**
-- **Testing Framework**: `npm install -D typescript` (v1.49.0+)  
-- **Language**: **https://www.typescriptlang.org/** 
+- **Testing Framework**: `npm install -D @playwright/test`
+- **TypeScript**:  `npm install -D typescript`
 - **Test Data**: `@faker-js/faker` for dynamic IP generation `npm install @faker-js/faker`
 
 ---
@@ -16,7 +16,7 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 ###  **2. Prerequisites**
 | Requirement       | Version       | 
 |-------------------|---------------|
-| Node.js          | ≥ 18.18.0     | 
+| Node.js          | ≥ 18.18.0     |
 | npm              | ≥ 9.x         | 
 
 ---
