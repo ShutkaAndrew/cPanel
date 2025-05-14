@@ -3,15 +3,11 @@
 Automated end-to-end tests for the cPanel shopping cart flow using:  
 
 
----
 
-###  **2. Prerequisites**
- Requirement       
+### Requirement       
 
  **Node.js**   
  
-
----
 
 
 ### Clone & install
