@@ -1,36 +1,37 @@
-# Project: cPanel E2E Automation Suite
+# 🚀 Project: **cPanel E2E Automation Suite**
 
-This project is focused on testing and verifying the cPanel shopping cart flow, including:
-product selection, dynamic IP input, addons handling, summary updates, and review & checkout validation.
+Automated end-to-end tests for the cPanel shopping cart flow using:  
+🔹 [Playwright](https://playwright.dev/)  
+🔹 [TypeScript](https://www.typescriptlang.org/)  
 
 ---
-Framework
 
-All tests are written in Playwright using TypeScript.
+## 🛠️ **1. Framework Stack**
+- **Testing Framework**: [Playwright](https://playwright.dev/) (v1.49.0+)  
+- **Language**: [TypeScript](https://www.typescriptlang.org/)  
+- **Test Data**: `@faker-js/faker` for dynamic IP generation  
 
-Prerequisites
+---
 
-Make sure the following are installed before running tests:
+## ⚙️ **2. Prerequisites**
+| Requirement       | Version       | 
+|-------------------|---------------|
+| Node.js          | ≥ 18.18.0     | 
+| npm              | ≥ 9.x         | 
 
-Node.js (>= 18.18.0)
+---
 
-Playwright (>= 1.49.0)
 
-TypeScript (installed via npm)
-
-faker.js / @faker-js/faker (used to generate dynamic IPs)
-
-How to Setup
-
-Clone the repository:
+# 1. Clone & install
 git clone https://github.com/ShutkaAndrew/cPanel.git
 cd cPanel
-Install dependencies:npm install
-Install Playwright browsers: npx playwright install
+npm install
 
+# 2. Install browsers (Critical!)
+npx playwright install
 
-How to Run Tests
-Run all tests: npx playwright test
+# 3. Run all tests
+npx playwright test
 
 Run a specific test file: 
 npx playwright test tests/add-addon-complete-flow.spec.ts
