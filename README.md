@@ -30,7 +30,7 @@ Run a specific test file
 
 ### Project Structure
 - Pages/           # Page Object Model (POM) classes for interacting with UI elements
-- tests/           # Spec files: complete flow, update/edit scenarios
+- tests/           # Spec files
 - utils/           # Custom helpers like IpBuilder, price utils
 - playwright.config.ts  # Playwright config file
 - package.json     # Scripts and dependencies
