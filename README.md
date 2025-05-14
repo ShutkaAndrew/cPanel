@@ -7,8 +7,8 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 ---
 
 ###  **1. Framework Stack**
-- **Testing Framework**: [Playwright](https://playwright.dev/) (v1.49.0+)  
-- **Language**: [TypeScript](https://www.typescriptlang.org/)  
+- **Testing Framework**: **https://playwright.dev/** (v1.49.0+)  
+- **Language**: **https://www.typescriptlang.org/** 
 - **Test Data**: `@faker-js/faker` for dynamic IP generation  
 
 ---
@@ -22,15 +22,15 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 ---
 
 
-###1. Clone & install
+### Clone & install
 git clone https://github.com/ShutkaAndrew/cPanel.git  
 **cd cPanel**  
 **npm install**  
 
-### 2. Install browsers  
+###  Install browsers  
 **npx playwright install**  
 
-### 3. Run all tests  
+###  Run all tests  
 **npx playwright test**  
 
 Run a specific test file  
