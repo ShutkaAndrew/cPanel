@@ -12,6 +12,7 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 
 Currently, tests validate titles only. 
 There is another project to check the prices,  
+,namely with proportional prices,
 but at the last stage of the checkout page  
 I have problems with checking the prices,  
 which causes the tests to fall,  
