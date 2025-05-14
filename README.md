@@ -6,7 +6,16 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 
 ### Requirement       
 
- **Node.js**   
+ **Node.js**  
+
+### Notes
+
+Currently, tests validate titles only. 
+There is another project to check the prices,  
+but at the last stage of the checkout page  
+I have problems with checking the prices,  
+which causes the tests to fall,  
+so here only checks the name of the addon and product 
  
 
 
@@ -41,9 +50,7 @@ Custom Fixtures: Defined in utils/fixtures.ts to inject dependencies into tests
 
 IpBuilder.ts for generating random IP addresses
 
-Notes
 
-Currently, tests validate titles only.
 
 
 
