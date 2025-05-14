@@ -1,0 +1,22 @@
+{
+  "name": "cpanel_e2e_autotests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.17",
+    "eslint": "^9.26.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
