@@ -1,8 +1,6 @@
 ##  Project: **cPanel E2E Automation Suite**
 
 Automated end-to-end tests for the cPanel shopping cart flow using:  
-🔹 [Playwright](https://playwright.dev/)  
-🔹 [TypeScript](https://www.typescriptlang.org/)  
 
 ---
 
