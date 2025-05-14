@@ -1,58 +1,62 @@
-# cPanel E2E Automation Suite
+# Project: cPanel E2E Automation Suite
 
-Automated end-to-end tests for the cPanel shopping flow using **Playwright + TypeScript**.
-
----
-
-## Features
-
-- Product + license selection
-- Dynamic IP input
-- Addons handling
-- Order Summary verification
-- Review & Checkout validation
-- Edit flow support
-- Currently checks only **titles**, not **prices** *(bonus logic planned)*
+This project is focused on testing and verifying the cPanel shopping cart flow, including:
+product selection, dynamic IP input, addons handling, summary updates, and review & checkout validation.
 
 ---
+Framework
 
-## Project Structure
+All tests are written in Playwright using TypeScript.
 
-├── Pages/ # Page Object classes (POM)
-├── tests/ # Test specs: full flows, update flows
-├── utils/ # Helpers like IpBuilder, pricing utilities
-├── test-results/ # Video/screenshots on failure
-├── playwright.config.ts # Playwright config
-├── package.json # NPM scripts & dependencies
+Prerequisites
 
----
+Make sure the following are installed before running tests:
 
-## 🛠 Technologies
+Node.js (>= 18.18.0)
 
-- [Playwright](https://playwright.dev/)
-- TypeScript
-- Node.js
+Playwright (>= 1.49.0)
 
----
+TypeScript (installed via npm)
 
-## ⚙️ Setup Instructions
+faker.js / @faker-js/faker (used to generate dynamic IPs)
 
-1. Clone the repository:
-```bash
+How to Setup
+
+Clone the repository:
 git clone https://github.com/ShutkaAndrew/cPanel.git
+cd cPanel
+Install dependencies:npm install
+Install Playwright browsers: npx playwright install
 
-Install dependencies:
-npm install
 
-Run tests:
-npx playwright test
+How to Run Tests
+Run all tests: npx playwright test
 
-Run a single test file
+Run a specific test file: 
+npx playwright test tests/add-addon-complete-flow.spec.ts
 
- Patterns Used
+Project Structure
+Pages/           # Page Object Model (POM) classes for interacting with UI elements
+tests/           # Spec files: complete flow, update/edit scenarios
+utils/           # Custom helpers like IpBuilder, price utils
+playwright.config.ts  # Playwright config file
+package.json     # Scripts and dependencies
+tsconfig.json    # TypeScript config
 
-    Page Object Model (POM)
+Patterns Used
 
-    Fixtures for dependency injection (utils/fixtures.ts)
+Page Object Model (POM): Encapsulates UI logic in reusable classes under /Pages
 
-    Custom helper IpBuilder to generate IPs
+Custom Fixtures: Defined in utils/fixtures.ts to inject dependencies into tests
+
+Helper Tools:
+
+IpBuilder.ts for generating random IP addresses
+
+Notes
+
+Currently, tests validate titles only. Price validation (including prorated logic) is planned.
+
+
+
+ 
