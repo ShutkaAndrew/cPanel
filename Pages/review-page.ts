@@ -4,11 +4,13 @@ export class ReviewPage {
   private readonly itemBlocks: Locator;
   public readonly checkoutButton: Locator;
   public editButton: Locator;
+  public continueShoppingButton: Locator;
 
   constructor(private readonly page: Page) {
     this.itemBlocks = page.locator('.view-cart-items .item');
     this.checkoutButton = page.locator('#checkout');
     this.editButton = page.locator('.btn.btn-link.btn-xs .fa-pencil-alt');
+    this.continueShoppingButton = page.locator('#btnContinueShopping');
     
   }
 
@@ -48,4 +50,9 @@ export class ReviewPage {
   async clickEdit(): Promise<void> {
     await this.editButton.click();
   }
+
+  async clickContinueShopping(): Promise<void> {
+  await this.continueShoppingButton.click();
+}
+
 }

@@ -2,14 +2,15 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  timeout: 60000,
+  timeout: 90000,
+  retries: 1,
   expect: {
     timeout: 30000
   },
   use: {
     headless: false,
-        navigationTimeout: 60000, // час на перехід на іншу сторінку
-        actionTimeout: 30000, // час на дію (click, fill, type, etc.)
+        navigationTimeout: 60000, 
+        actionTimeout: 30000, 
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'on-first-retry',

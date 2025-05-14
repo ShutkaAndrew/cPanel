@@ -55,14 +55,4 @@ export class CheckoutPage {
   return titles;
 }
 
-
-  //  Check if a specific section is visible by name
-  async isSectionVisible(sectionName: string): Promise<boolean> {
-    return this.page.locator(`text=${sectionName}`).isVisible();
-  }
-
-  //  Check if Complete Order button is disabled
-  async isCompleteOrderDisabled(): Promise<boolean> {
-    return !(await this.completeOrderButton.isEnabled());
-  }
 }
