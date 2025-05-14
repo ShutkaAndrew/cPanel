@@ -22,7 +22,7 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 
 ### Clone & install
 git clone https://github.com/ShutkaAndrew/cPanel.git  
-`cd cPanel`  
+`cd cPanel_E2E_autotests`  
 `npm install`  
 
 ###  Install browsers  
