@@ -24,17 +24,17 @@ Automated end-to-end tests for the cPanel shopping cart flow using:
 
 ### Clone & install
 git clone https://github.com/ShutkaAndrew/cPanel.git  
-**cd cPanel**  
-**npm install**  
+`cd cPanel`  
+`npm install`  
 
 ###  Install browsers  
-**npx playwright install**  
+`npx playwright install`  
 
 ###  Run all tests  
-**npx playwright test**  
+`npx playwright test`  
 
 Run a specific test file  
-**npx playwright test tests/add-addon-complete-flow.spec.ts**  
+`npx playwright test tests/add-addon-complete-flow.spec.ts`  
 
 ### Project Structure
 - Pages/           # Page Object Model (POM) classes for interacting with UI elements
